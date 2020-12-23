@@ -15,7 +15,6 @@ function echo(input) {
 }
 
 echo(42);
-}
 
 
 function echo(input, greeting) {
@@ -33,7 +32,7 @@ function sendUserMessage(user, text) {
 
 
 //   -------------- CLOSURE---------
-A closure is an inner function that is inside its outer function’s scope and has access to its variables:
+//A closure is an inner function that is inside its outer function’s scope and has access to its variables:
 
 function makeSum(x){
     return function(y) {
@@ -97,12 +96,7 @@ const capitalize = function(name) {
   return `${name.charAt(0).toUpperCase()}${name.slice(1)}`;  
 }
 
-// quitar la keyword function
-const capitalize = (name) { 
-  return `${name.charAt(0).toUpperCase()}${name.slice(1)}`;  
-}
-
-// añadir la fecha apuntando al body de la funcion
+// quitar la keyiword function y añadir la fecha apuntando al body de la funcion
 const capitalize = (name) => { 
   return `${name.charAt(0).toUpperCase()}${name.slice(1)}`;  
 }
