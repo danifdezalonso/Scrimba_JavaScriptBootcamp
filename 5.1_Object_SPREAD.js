@@ -19,6 +19,6 @@ console.log(Object.assign({}, user, newUser)); // crea nuevo objecto
 console.log(Object.assign({}, user, newUser, { verified: false })); // nuevo dato a ingresar verified se puede hacer creando otro igual que el anterior o en linea como este si es simple
 
 
-// CREAR UN USUARIO NUEVO SIN MUTAR EL PRIMIGENIO *********************** SPREADING****** => ...antes del objecto
+// CREAR UN USUARIO NUEVO (createdUser) SIN MUTAR EL PRIMIGENIO (user) *********************** SPREADING****** => ...antes del objecto
 const createdUser = { ...user, ...newUser, verified: false };
 console.log(createdUser);
